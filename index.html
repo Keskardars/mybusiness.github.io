@@ -60,7 +60,7 @@
 
             (() => {
                 const deadlineDate = new Date('May 21, 2022 4:00:59').getTime();
-                const countdownHours = document.querySelector('.countdown-hours .number');
+//                 const countdownHours = document.querySelector('.countdown-hours .number');
                 const countdownMinutes = document.querySelector('.countdown-minutes .number');
                 const countdownSeconds = document.querySelector('.countdown-seconds .number');
 
@@ -68,11 +68,11 @@
                     const currentDate = new Date().getTime();
                     const distance = deadlineDate - currentDate;
 
-                    const hours = Math.floor((distance % (000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//                     const hours = Math.floor((distance % (000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % ( 60 * 60)) / (1000 * 60));
                     const seconds = Math.floor((distance %  (1000 * 60)) / 1000);
 
-                    countdownHours.innerHTML = hours;
+//                     countdownHours.innerHTML = hours;
                     countdownMinutes.innerHTML = minutes;
                     countdownSeconds.innerHTML = seconds;
                 }, 1000);
