@@ -59,8 +59,7 @@
         <script>
 
             (() => {
-                const deadlineDate = new Date('May 21, 2022 4:00:59').getTime();
-//                 const countdownHours = document.querySelector('.countdown-hours .number');
+                const deadlineDate = new Date('May 23, 2022 5:09:59').getTime();
                 const countdownMinutes = document.querySelector('.countdown-minutes .number');
                 const countdownSeconds = document.querySelector('.countdown-seconds .number');
 
@@ -68,11 +67,9 @@
                     const currentDate = new Date().getTime();
                     const distance = deadlineDate - currentDate;
 
-//                     const hours = Math.floor((distance % (000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                     const minutes = Math.floor((distance % ( 60)) / (1*60));
-                    const seconds = Math.floor((distance %  ( 60)) / 1);
+                    const seconds = Math.floor((distance %  (60)) / 1);
 
-//                     countdownHours.innerHTML = hours;
                     countdownMinutes.innerHTML = minutes;
                     countdownSeconds.innerHTML = seconds;
                 }, 1000);
