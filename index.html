@@ -59,12 +59,12 @@
         <script>
 
             (() => {
-                const deadlineDate = new Date('May 23, 2022 5:09:59').getTime();
+//                 const deadlineDate = new Date('May 23, 2022 5:09:59').getTime();
                 const countdownMinutes = document.querySelector('.countdown-minutes .number');
                 const countdownSeconds = document.querySelector('.countdown-seconds .number');
 
                 setInterval ( () => {
-                    const currentDate = new Date().getTime();
+//                     const currentDate = new Date().getTime();
                     const distance = deadlineDate - currentDate;
 
                     const minutes = Math.floor((distance % (0*60));
